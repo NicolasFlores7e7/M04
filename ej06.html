@@ -8,7 +8,7 @@
         <title>Ejercicio6</title>
     </head>
     <body>
-        <form action=".">
+        <form action="." enctype="multipart/form-data">
             <fieldset>
                 <legend>Ficha de la película</legend>
                 <label for="fname">Titúlo:  </label>
@@ -20,7 +20,7 @@
                 <label for="poster">Póster: </label>
                 <input type="file" id="poster"><br><br>
                 <label for="version">Versión:</label><br>
-                <input type="checkbox" id="version">IMAX
+                <input type="checkbox" id="version">IMAX <checked>
                 <input type="checkbox" id="version">3D
                 <input type="checkbox" id="version">Full HD <br><br>
                 <label for="pegi">Clasificación: </label><br>
@@ -38,15 +38,25 @@
                     <option value="cinesa">Cinesa</option>
                     <option value="fHDCinema">Cines Full HD</option>
                   </select><br>
-                <textarea name="sinopsis" id="" cols="30" rows="10" placeholder="Escribe una breve sinopsis"></textarea> <br><br>
+                <textarea name="sinopsis" id="" cols="100" rows="10" placeholder="Escribe una breve sinopsis" ></textarea> <br><br>
                 <select id="lang">
                     <option value="en">Inglés</option>
                     <option value="es">Español</option>
                     <option value="cat">Català</option>
                     <option value="vo">Versión Original</option>
-                </select><br>
+                </select><br><br>
                 <label for="session">Sesión: </label>
                 <input type="time" id="session"><br><br>
+                <label for="daysOn">Días de proyección: </label><br>
+                <select id="daysOn" multiple>
+                  <option value="one">Lunes</option>
+                  <option value="two">Martes</option>
+                  <option value="three">Miércoles</option>
+                  <option value="four">Jueves</option>
+                  <option value="five">Viernes</option>
+                  <option value="six">Sábado</option>
+                  <option value="seven">Domingo</option>
+                </select><br><br>
                 <label for="color">Color de fondo: </label>
                 <input type="color" name="color"><br><br>
                 <label for="rating">Puntiación del público: </label>
